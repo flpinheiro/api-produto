@@ -31,6 +31,12 @@ choco install k3d
 k3d cluster create mycluster --agents 3 --servers 3 -p 8080:30000@loadbalancer
 ```
 
+## delete cluster
+
+```cli
+k3d cluster delete mycluster
+```
+
 ## kubctl apply
 
 ```cli
