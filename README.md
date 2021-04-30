@@ -44,6 +44,7 @@ kubectl apply -f .\k8s\mongodb\deployment.yml
 kubectl apply -f .\k8s\mongodb\service.yml
 kubectl apply -f .\k8s\api\deployment.yml
 kubectl apply -f .\k8s\api\service.yml
+kubectl apply -f .\k8s\ -R
 ```
 
 ## kubectl get
@@ -53,3 +54,15 @@ kubectl get pods
 kubectl get services
 kubectl get all
 ```
+
+## kubectl top pods
+
+```cli
+kubctl top pods
+```
+
+[metric server](https://github.com/kubernetes-sigs/metrics-server)
+
+## horizontal pod auto scale
+
+escalar a aplicação sempre que o pod atingir alguma metrica de request, por exemplo sempre que o pod atingir 80% de cpu.
