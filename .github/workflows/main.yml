@@ -33,9 +33,9 @@ jobs:
           # Server address of Docker registry. If not set then will default to Docker Hub
           # registry: # optional
           # Username used to log against the Docker registry
-          username: ${{secrets.DOCKERHUB_USER}}
+          username: ${{ secrets.DOCKERHUB_USER }}
           # Password or personal access token used to log against the Docker registry
-          password: $${{secrets.DOCKERHUB_PWD}}
+          password: ${{ secrets.DOCKERHUB_PWD }}
           # Log out from the Docker registry at the end of a job
           # logout: # optional, default is true      
 
